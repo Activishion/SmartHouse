@@ -14,5 +14,5 @@ class Sensor(Base):
     status: Mapped[bool] = mapped_column(Boolean, default=False)
     date_create: Mapped[datetime] = mapped_column(DateTime, default=datetime.now())
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         return self.name

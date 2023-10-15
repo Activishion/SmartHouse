@@ -13,5 +13,5 @@ class Location(Base):
     sensors: Mapped[int] = mapped_column(ForeignKey('sensors.id'))
     date_create: Mapped[datetime] = mapped_column(DateTime, default=datetime.now())
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         return self.name
