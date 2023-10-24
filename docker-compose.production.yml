@@ -11,7 +11,7 @@ services:
     container_name: postresql
     image: postgres:15
     ports:
-      - '5432:${POSTGRES_PORT}'
+      - '5433:${POSTGRES_PORT}'
     environment:
       POSTGRES_NAME: ${POSTGRES_NAME}
       POSTGRES_USER: ${POSTGRES_USER}
